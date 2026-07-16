@@ -27,10 +27,6 @@ TATAS-Web/
 └── img/
 ```
 
-## Yayınlama
-
-Sitenin nasıl yayınlandığı, güncellendiği ve kendi domaine nasıl bağlanacağı için bkz. [YAYINLAMA.md](YAYINLAMA.md).
-
 ## İletişim
 
 tatas.system@gmail.com
