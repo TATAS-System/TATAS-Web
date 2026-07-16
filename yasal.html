@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gizlilik Politikası ve Kullanım Koşulları — TATAS</title>
+  <meta name="description" content="TATAS uygulamasının KVKK'ya uygun Aydınlatma Metni, Gizlilik Politikası ve Kullanım Koşulları.">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="img/icon.png" alt="">
+        <span>TATAS</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="kullanim-kilavuzu.html">Kullanım Kılavuzu</a></li>
+        <li><a href="yasal.html" class="active">Gizlilik &amp; Koşullar</a></li>
+        <li><a href="yasal.html#kosullar">İletişim</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Gizlilik Politikası ve Kullanım Koşulları</h1>
+      <p>Verilerinizin nerede ve nasıl saklandığını dürüstçe anlatıyoruz. Kısacası: cihazınızda ve kendi Google Drive'ınızda kalır, bizde değil.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="legal-switch">
+          <button type="button" class="is-active" data-doc="gizlilik">Gizlilik Politikası</button>
+          <button type="button" data-doc="kosullar">Kullanım Koşulları</button>
+        </div>
+
+        <!-- ================= GİZLİLİK POLİTİKASI ================= -->
+        <article class="legal-doc" id="gizlilik">
+          <p class="meta">Son güncelleme: 17 Temmuz 2026 · KVKK Kurumu'nun "Mobil Uygulamalarda Mahremiyetin Korunmasına Yönelik Tavsiyeler" (Yayın No: 65, Mart 2025) rehberi esas alınarak hazırlanmıştır.</p>
+
+          <h2 id="g-giris">1. Bu belge ne içeriyor</h2>
+          <p>6698 sayılı Kişisel Verilerin Korunması Kanunu'nun ("Kanun") 10. maddesi uyarınca, TATAS (Tamir Takip Sistemi) mobil uygulamasını ("Uygulama") kullanırken kişisel verilerinizin işlenmesine ilişkin olarak aşağıdaki hususlarda bilgilendirilmektesiniz. Uygulamanın geliştiricisiyle ("Geliştirici") iletişim: <a href="mailto:tatas.system@gmail.com">tatas.system@gmail.com</a>.</p>
+
+          <h2 id="g-nerede">2. Verileriniz nerede duruyor</h2>
+          <p>TATAS'ın <strong>kendi sunucusu yoktur.</strong> Bu, alışılmışın dışında bir mimari olduğu için en başta açıklığa kavuşturuyoruz:</p>
+          <table>
+            <tr><th>Konum</th><th>Açıklama</th></tr>
+            <tr><td>Cihazınızda</td><td>Tüm veriler önce telefonunuzun yerel hafızasına yazılır — internet olmadan da çalışır.</td></tr>
+            <tr><td>Sizin Drive'ınızda</td><td>Yedek, kendi Google hesabınızın gizli bir uygulama klasöründe (<code>appDataFolder</code>) tutulur.</td></tr>
+            <tr><td>Geliştiricide</td><td>Hiçbir şey. Verinize erişebileceğimiz bir veritabanımız yok.</td></tr>
+          </table>
+
+          <h2 id="g-veriler">3. Topladığımız veriler</h2>
+          <h3>Hesap bilgileri</h3>
+          <p>Google ile giriş yaptığınızda; e-posta adresiniz, adınız ve profil fotoğrafınız uygulama içinde görüntülenmek üzere alınır. Bunlar Google'ın kendi kimlik doğrulama sisteminden gelir, ayrıca bir veritabanında saklanmaz.</p>
+          <h3>İşletme verileriniz</h3>
+          <p>Uygulamayı kullanırken kendi isteğinizle girdiğiniz: müşteri adı/telefonu, sipariş/tamir kayıtları, fiyatlar, gider kayıtları ve çektiğiniz ürün fotoğrafları.</p>
+          <h3>Cihaz izinleri</h3>
+          <p><strong>Mikrofon:</strong> Sadece düğmeye bastığınızda etkinleşir; konuşmanız cihazınızın kendi motoru tarafından anlık metne çevrilir, ses kaydı hiçbir yere gönderilmez veya saklanmaz. <strong>Kamera/Galeri:</strong> tamir edilecek ürünlerin fotoğrafını çekmek/seçmek için kullanılır.</p>
+
+          <h2 id="g-scope">4. Google Drive izinleri</h2>
+          <p>TATAS, Google Drive'dan yalnızca <strong>tek bir dar yetki</strong> ister: <code>drive.appdata</code>.</p>
+          <table>
+            <tr><th>Yetki</th><th>Açıklama</th></tr>
+            <tr><td>Verdiği</td><td>Sadece TATAS'ın kendi oluşturduğu, gizli ve görünmez bir klasöre erişim</td></tr>
+            <tr><td>Vermediği</td><td>Drive'ınızdaki diğer dosyaları görme, okuma veya değiştirme yetkisi</td></tr>
+          </table>
+          <p>Bu izni, Google Hesabı ayarlarınızdaki "Güvenlik → Üçüncü taraf uygulamalar" bölümünden istediğiniz an geri alabilirsiniz.</p>
+
+          <h2 id="g-aktarim">5. Kimlere aktarılır</h2>
+          <ul>
+            <li><strong>Google LLC:</strong> Kimlik doğrulama ve verilerinizin kendi Drive hesabınızda saklanması amacıyla.</li>
+            <li><strong>Geliştiriciye:</strong> Aktarım yok — erişebileceğimiz bir sunucu bulunmuyor.</li>
+            <li><strong>Diğer üçüncü taraflara:</strong> Aktarım yok. Reklam ağı, analitik/izleme SDK'sı kullanılmaz.</li>
+            <li><strong>WhatsApp/SMS:</strong> Müşterinizi bilgilendirmeyi tercih ettiğinizde mesaj, cihazınızdaki WhatsApp/SMS uygulaması üzerinden doğrudan gönderilir; Geliştirici bu iletişime taraf olmaz.</li>
+          </ul>
+
+          <div class="callout">
+            <p><strong>Önemli:</strong> Uygulamaya girdiğiniz kendi müşterilerinize ait veriler bakımından KVKK kapsamında "veri sorumlusu" <strong>sizsiniz</strong> — Geliştirici değil. Geliştirici bu veriye erişemez, sadece sizin belirlediğiniz yerde (cihazınız/Drive'ınız) saklanmasını sağlayan bir araç sunar.</p>
+          </div>
+
+          <h2 id="g-sure">6. Saklama süreleri</h2>
+          <ul>
+            <li>Çöpe atılan sipariş/müşteri kayıtları: <strong>7 gün</strong> geri alınabilir, sonra kalıcı silinir.</li>
+            <li>Teslim edilmiş işlerin fotoğrafları: teslimattan <strong>14 gün</strong> sonra depolamadan temizlenir (metin/finansal kayıt kalır).</li>
+          </ul>
+
+          <h2 id="g-haklar">7. Kanun'un 11. Maddesi Kapsamındaki Haklarınız</h2>
+          <ol>
+            <li>Kişisel verinizin işlenip işlenmediğini öğrenme</li>
+            <li>İşlenmişse buna ilişkin bilgi talep etme</li>
+            <li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme</li>
+            <li>Yurt içinde/dışında aktarıldığı üçüncü kişileri bilme</li>
+            <li>Eksik/yanlış işlenmişse düzeltilmesini isteme</li>
+            <li>Kanun'un 7. maddesindeki şartlar çerçevesinde silinmesini/yok edilmesini isteme</li>
+            <li>Düzeltme/silme işlemlerinin aktarılan üçüncü kişilere bildirilmesini isteme</li>
+            <li>Otomatik sistemlerle analiz sonucu aleyhinize bir sonuç çıkmasına itiraz etme</li>
+            <li>Kanuna aykırı işlenme nedeniyle zarara uğramanız hâlinde tazminat talep etme</li>
+          </ol>
+          <p>Bu hakları Uygulama içinde Ayarlar → "Hesabı Sil" ile doğrudan kullanabilir, diğer talepleriniz için <a href="mailto:tatas.system@gmail.com">tatas.system@gmail.com</a> adresinden bize ulaşabilirsiniz.</p>
+
+          <h2 id="g-cocuk">8. Çocukların gizliliği</h2>
+          <p>TATAS, işletme sahiplerine yönelik bir araçtır ve 13 yaş altındaki çocuklardan bilerek veri toplamaz.</p>
+
+          <h2 id="g-degisiklik">9. Değişiklikler</h2>
+          <p>Bu politika güncellendiğinde, sayfanın üst kısmındaki "Son güncelleme" tarihi değişir.</p>
+        </article>
+
+        <!-- ================= KULLANIM KOŞULLARI ================= -->
+        <article class="legal-doc" id="kosullar" style="display:none;">
+          <p class="meta">Son güncelleme: 17 Temmuz 2026</p>
+
+          <h2>1. Hizmetin tanımı</h2>
+          <p>TATAS; tamir, bakım ve onarım işletmelerinin müşteri, sipariş ve gider kayıtlarını yönetmesi için tasarlanmış, çevrimdışı öncelikli bir mobil uygulamadır. Veri saklama alanı olarak kullanıcının kendi Google Drive hesabını kullanır.</p>
+
+          <h2>2. Ücretlendirme</h2>
+          <p>Uygulama şu anda ücretsiz ve reklamsız sunulmaktadır. Geliştirici, ileride isteğe bağlı premium özellikler veya abonelik planları sunma hakkını saklı tutar.</p>
+
+          <h2>3. Kabul ve uygunluk</h2>
+          <p>Uygulamayı kullanarak bu koşulları kabul etmiş sayılırsınız. TATAS bir işletme yönetim aracıdır; kişisel/tüketici kullanımı için tasarlanmamıştır.</p>
+
+          <h2>4. Hesabınız</h2>
+          <p>Uygulamaya Google hesabınızla giriş yaparsınız. Hesabınızın güvenliğinden (şifre, iki adımlı doğrulama) siz sorumlusunuz — verilerinizin güvenliği doğrudan Google hesabınızın güvenliğine bağlıdır.</p>
+
+          <h2>5. Girdiğiniz içerik</h2>
+          <p>Uygulamaya girdiğiniz tüm veriler (müşteri bilgisi, fotoğraflar, notlar) size aittir. Bu verilerin doğruluğundan, güncelliğinden ve müşterilerinizden gerekli izinleri almaktan siz sorumlusunuz.</p>
+
+          <h2>6. Yasaklı kullanım</h2>
+          <ul>
+            <li>Uygulamayı, üçüncü kişilerin rızası olmadan onlara ait hassas verileri toplamak için kullanamazsınız.</li>
+            <li>Uygulamanın güvenlik mekanizmalarını atlatmaya çalışamazsınız.</li>
+            <li>Uygulamayı tersine mühendislik yapmak veya kaynak koduna izinsiz erişmek amacıyla kullanamazsınız.</li>
+          </ul>
+
+          <h2>7. Fikri mülkiyet</h2>
+          <p>TATAS'ın uygulama tasarımı, kaynak kodu ve markası Geliştirici'ye aittir. Uygulamaya girdiğiniz veriler her zaman size aittir.</p>
+
+          <h2>8. Garanti reddi</h2>
+          <p>TATAS "olduğu gibi" sunulur. Kesintisiz veya hatasız çalışacağına dair bir garanti verilmez. Çevrimdışı senaryolarda ve çoklu cihaz kullanımında veri bütünlüğünü korumak için ciddi mühendislik çabası harcanmıştır, ancak düzenli olarak verinizin Drive'a senkronize olduğunu kontrol etmenizi öneririz.</p>
+
+          <h2>9. Sorumluluğun sınırlandırılması</h2>
+          <p>Yasaların izin verdiği azami ölçüde, Geliştirici; veri kaybı, iş kaybı veya dolaylı zararlardan sorumlu tutulamaz.</p>
+
+          <h2>10. Hizmetin sonlanması</h2>
+          <p>Hesabınızı istediğiniz zaman "Hesabı Sil" ile kapatabilirsiniz. Uygulamanın sunulması gelecekte sona erdirilirse, verileriniz zaten kendi cihazınızda ve kendi Drive'ınızda olduğu için erişiminizi kaybetmezsiniz — bu, mimarinin bilinçli bir tercihidir.</p>
+
+          <h2>11. Uygulanacak hukuk</h2>
+          <p>Bu koşullar Türkiye Cumhuriyeti kanunlarına tabidir.</p>
+
+          <h2 id="k-iletisim">12. İletişim</h2>
+          <p>Sorularınız için: <a href="mailto:tatas.system@gmail.com">tatas.system@gmail.com</a></p>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 TATAS · Tamir Takip Sistemi</span>
+      <ul class="footer-links">
+        <li><a href="kullanim-kilavuzu.html">Kullanım Kılavuzu</a></li>
+        <li><a href="yasal.html">Gizlilik &amp; Koşullar</a></li>
+        <li><a href="mailto:tatas.system@gmail.com">tatas.system@gmail.com</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    if (toggle) {
+      toggle.addEventListener('click', function () {
+        var open = links.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+
+    (function () {
+      var buttons = document.querySelectorAll('.legal-switch button');
+      var docs = { gizlilik: document.getElementById('gizlilik'), kosullar: document.getElementById('kosullar') };
+
+      function showDoc(name) {
+        Object.keys(docs).forEach(function (key) {
+          docs[key].style.display = key === name ? '' : 'none';
+        });
+        buttons.forEach(function (b) {
+          b.classList.toggle('is-active', b.getAttribute('data-doc') === name);
+        });
+      }
+
+      buttons.forEach(function (b) {
+        b.addEventListener('click', function () { showDoc(b.getAttribute('data-doc')); });
+      });
+
+      if (window.location.hash === '#kosullar') showDoc('kosullar');
+    })();
+  </script>
+</body>
+</html>

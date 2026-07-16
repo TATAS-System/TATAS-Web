@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kullanım Kılavuzu — TATAS</title>
+  <meta name="description" content="TATAS uygulamasını nasıl kuracağınız, müşteri ve iş ekleyeceğiniz, çoklu cihazda kullanacağınız adım adım anlatılıyor.">
+  <link rel="icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <img src="img/icon.png" alt="">
+        <span>TATAS</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Ana Sayfa</a></li>
+        <li><a href="kullanim-kilavuzu.html" class="active">Kullanım Kılavuzu</a></li>
+        <li><a href="yasal.html">Gizlilik &amp; Koşullar</a></li>
+        <li><a href="yasal.html#kosullar">İletişim</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Kullanım Kılavuzu</h1>
+      <p>TATAS'ı kurulumdan ilk işinizi teslim etmeye kadar adım adım anlatıyoruz.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="steps" style="max-width:760px;">
+
+          <div class="step">
+            <div class="step-num"></div>
+            <div>
+              <h3>Google hesabınızla giriş yapın</h3>
+              <p>TATAS'ı ilk açtığınızda "Google ile Giriş Yap" butonuna basmanız yeterli. Ayrı bir kullanıcı adı/şifre oluşturmanıza gerek yok — verileriniz doğrudan bu Google hesabınıza bağlı, gizli bir Drive klasöründe tutulacak.</p>
+              <p class="tip">İpucu: Dükkanınızda birden fazla kişi (ör. siz ve çırağınız) uygulamayı kullanacaksa, ikinci cihazda da aynı Google hesabıyla giriş yapmanız yeterli — kurulum ekranını hiç görmeden doğrudan verileriniz gelir.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num"></div>
+            <div>
+              <h3>Mesleğinizi ve dükkan adınızı seçin</h3>
+              <p>İlk girişte mesleğinizi (Ayakkabı/Çanta, Terzi, Saat, Oto Servis, Elektronik, Kuyumcu) seçersiniz. Uygulamanın tüm kategorileri ve işlem listeleri buna göre otomatik şekillenir.</p>
+              <p><strong>Dikkat:</strong> Mesleğinizi daha sonra değiştirirseniz, mevcut mesleğinize ait tüm veriler (cihaz + Drive) kalıcı olarak silinir. Bu, farklı mesleklere ait verilerin karışmaması için bilinçli bir güvenlik önlemidir.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num"></div>
+            <div>
+              <h3>Müşteri ekleyin</h3>
+              <p>"Yeni İş" ekranındaki müşteri arama kutusuna isim yazmaya başlayın — kayıtlı müşteriler otomatik listelenir. Eşleşme yoksa "Yeni Müşteri Olarak Kaydet" seçeneği çıkar.</p>
+              <ul>
+                <li>Müşteri adı veya telefonunu mikrofon düğmesiyle sesli de girebilirsiniz.</li>
+                <li>Seçili bir müşterinin bilgisinde hata varsa, aynı ekrandaki "Güncelle" butonuyla Müşteriler sayfasına gitmeden düzeltebilirsiniz.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num"></div>
+            <div>
+              <h3>İşi oluşturun</h3>
+              <p>Ürün kategorisini, türünü ve yapılacak işlemleri seçin, fiyatı girin. İsterseniz ürünün geliş halini fotoğraflayıp işe ekleyin, notlar için mikrofonu kullanabilirsiniz. "Listeye Ekle" ile aynı işe birden fazla ürün eklenebilir.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num"></div>
+            <div>
+              <h3>İş durumunu güncelleyin</h3>
+              <p>İşler ekranında üç sekme vardır: <strong>Bekleyenler</strong>, <strong>Teslime Hazır</strong>, <strong>Tüm İşler</strong>. Bir işi sağa kaydırarak (veya kartın üzerindeki butona basarak) bir sonraki duruma taşıyabilirsiniz.</p>
+              <p>Durum değiştiğinde, müşteriyi WhatsApp veya SMS ile bilgilendirmek isteyip istemediğiniz sorulur — hangi kanalı kullanacağınızı siz seçersiniz.</p>
+              <p class="tip">İpucu: Bir işi yanlışlıkla çöpe attıysanız endişelenmeyin — kaydırma öncesi bir onay ister ve atsanız bile 7 gün boyunca Çöp Kutusu'ndan geri alabilirsiniz.</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num"></div>
+            <div>
+              <h3>Teslim edilen işleri Arşiv'de bulun</h3>
+              <p>Teslim edilen işler otomatik olarak Arşiv sekmesine, ay bazlı olarak düşer. Yıl/Ay seçerek geçmiş işlerinize ulaşabilir, fotoğraflarını görüntüleyebilir, gerekirse "Geri Al" ile tekrar aktif işlere taşıyabilirsiniz (ör. müşteri son anda ek bir ürün daha getirdiğinde).</p>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-num"></div>
+            <div>
+              <h3>Verileriniz otomatik yedeklenir</h3>
+              <p>İnternet bağlantınız olduğu sürece, yaptığınız her değişiklik arka planda sessizce kendi Google Drive hesabınıza yedeklenir. Çevrimdışıyken yaptığınız işlemler ise bağlantı geri geldiğinde otomatik gönderilir — hiçbir şey kaybolmaz.</p>
+              <p>Başka bir cihaz aynı hesapla senkron olduğunda, ekranın üstünde "X cihazından Y dakika önce güncellendi" şeklinde küçük bir rozet belirir.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt section-border">
+      <div class="container">
+        <div class="section-head">
+          <h2>Sık sorulan sorular</h2>
+        </div>
+        <div style="max-width:760px;">
+
+          <div class="faq-item">
+            <h4>İnternetim yokken uygulama çalışır mı?</h4>
+            <p>Evet. TATAS "çevrimdışı öncelikli" tasarlandı — iş ekleme, fotoğraf çekme, durum değiştirme dahil her şey internetsiz çalışır. Bağlantı geri geldiğinde değişiklikler otomatik senkronize olur.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4>Verilerim nerede saklanıyor?</h4>
+            <p>Cihazınızda ve kendi Google Drive hesabınızdaki gizli, sadece TATAS'ın erişebildiği bir klasörde. Ayrıntılı bilgi için <a href="yasal.html">Gizlilik Politikası</a> sayfasına bakabilirsiniz.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4>Aynı hesapla birden fazla telefon kullanabilir miyim?</h4>
+            <p>Evet. İkinci bir cihazda aynı Google hesabıyla giriş yaptığınızda kurulum ekranını hiç görmeden mevcut verileriniz gelir. Çoklu cihaz senkronizasyonu için özel olarak tasarlandı.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4>Mesleğimi sonradan değiştirebilir miyim?</h4>
+            <p>Evet, Ayarlar'dan mümkün. Ancak mevcut mesleğinize ait tüm veriler (cihaz + Drive) kalıcı olarak silineceği için bu işlem "SİL" yazarak onaylanmalıdır.</p>
+          </div>
+
+          <div class="faq-item">
+            <h4>Uygulama ücretsiz mi?</h4>
+            <p>Evet, tamamen ücretsizdir. Reklam veya abonelik yoktur; veri depolama için kendi Google Drive'ınızın ücretsiz alanı kullanılır.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 TATAS · Tamir Takip Sistemi</span>
+      <ul class="footer-links">
+        <li><a href="kullanim-kilavuzu.html">Kullanım Kılavuzu</a></li>
+        <li><a href="yasal.html">Gizlilik &amp; Koşullar</a></li>
+        <li><a href="mailto:tatas.system@gmail.com">tatas.system@gmail.com</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    var toggle = document.getElementById('navToggle');
+    var links = document.getElementById('navLinks');
+    if (toggle) {
+      toggle.addEventListener('click', function () {
+        var open = links.classList.toggle('is-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+  </script>
+</body>
+</html>
