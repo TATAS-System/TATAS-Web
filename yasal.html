@@ -230,7 +230,11 @@
       }
 
       buttons.forEach(function (b) {
-        b.addEventListener('click', function () { showDoc(b.getAttribute('data-doc')); });
+        b.addEventListener('click', function () {
+          var name = b.getAttribute('data-doc');
+          showDoc(name);
+          history.replaceState(null, '', '#' + name);
+        });
       });
 
       if (window.location.hash === '#kosullar') showDoc('kosullar');
