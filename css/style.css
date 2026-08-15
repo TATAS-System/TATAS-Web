@@ -378,6 +378,39 @@ img { max-width: 100%; display: block; }
   .step { grid-template-columns: 1fr; gap: 10px; }
 }
 
+/* ---------------- Guide video grid ---------------- */
+
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+@media (max-width: 900px) { .video-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .video-grid { grid-template-columns: 1fr; } }
+
+.video-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+.video-card .video-embed {
+  max-width: none;
+  margin-bottom: 18px;
+  box-shadow: none;
+}
+.video-card .badge {
+  display: inline-block;
+  color: var(--secondary);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.video-card h3 { font-size: 17px; margin-bottom: 8px; }
+.video-card p { color: var(--text-secondary); font-size: 14.5px; margin-bottom: 0; }
+
 /* ---------------- FAQ ---------------- */
 
 .faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; }
