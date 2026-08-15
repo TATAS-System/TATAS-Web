@@ -30,6 +30,5 @@ Domaini satın aldığında:
 
 ## Güncellemen Gerekenler
 
-- **`index.html`** içindeki "Google Play'de Çok Yakında" butonu — uygulama Play Store'da yayınlandığında, `href="#"` kısmını gerçek Play Store linkinle değiştir (kodda bunu işaret eden bir yorum satırı var).
 - **`yasal.html`** — Gizlilik Politikası/Kullanım Koşulları içeriği değişirse, sayfanın en üstündeki "Son güncelleme" tarihini de güncelle.
 - **TATAS uygulaması** (`SettingsScreen.tsx`) — Gizlilik Politikası/Kullanım Koşulları linkleri bu siteye (`yasal.html#gizlilik` / `yasal.html#kosullar`) işaret ediyor; domain değişirse orası da güncellenmeli.
