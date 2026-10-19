@@ -48,71 +48,94 @@
 
         <!-- ================= GİZLİLİK POLİTİKASI ================= -->
         <article class="legal-doc" id="gizlilik">
-          <p class="meta">Son güncelleme: 23 Temmuz 2026 · KVKK Kurumu'nun "Mobil Uygulamalarda Mahremiyetin Korunmasına Yönelik Tavsiyeler" (Yayın No: 65, Mart 2025) rehberi esas alınarak hazırlanmıştır.</p>
+          <p class="meta">Son güncelleme: 19 Ekim 2026 · KVKK Kurumu'nun "Mobil Uygulamalarda Mahremiyetin Korunmasına Yönelik Tavsiyeler" (Yayın No: 65, Mart 2025) rehberi esas alınarak hazırlanmıştır.</p>
 
-          <h2 id="g-giris">1. Bu belge ne içeriyor</h2>
-          <p>6698 sayılı Kişisel Verilerin Korunması Kanunu'nun ("Kanun") 10. maddesi uyarınca, TATAS (Tamir Takip Sistemi) mobil uygulamasını ("Uygulama") kullanırken kişisel verilerinizin işlenmesine ilişkin olarak aşağıdaki hususlarda bilgilendirilmektesiniz. Uygulamanın geliştiricisiyle ("Geliştirici") iletişim: <a href="mailto:tatas.system@gmail.com">tatas.system@gmail.com</a>.</p>
-
-          <h2 id="g-nerede">2. Verileriniz nerede duruyor</h2>
-          <p>TATAS'ın <strong>kendi sunucusu yoktur.</strong> Bu, alışılmışın dışında bir mimari olduğu için en başta açıklığa kavuşturuyoruz:</p>
+          <h2 id="g-giris">1. Veri sorumlusu</h2>
+          <p>6698 sayılı Kişisel Verilerin Korunması Kanunu'nun ("Kanun") 10. maddesi uyarınca, TATAS (Tamir Takip Sistemi) mobil uygulamasını ("Uygulama") kullanırken kişisel verilerinizin işlenmesi hakkında sizi bilgilendiriyoruz.</p>
           <table>
-            <tr><th>Konum</th><th>Açıklama</th></tr>
-            <tr><td>Cihazınızda</td><td>Tüm veriler önce telefonunuzun yerel hafızasına yazılır — internet olmadan da çalışır.</td></tr>
-            <tr><td>Sizin Drive'ınızda</td><td>Yedek, kendi Google hesabınızın gizli bir uygulama klasöründe (<code>appDataFolder</code>) tutulur.</td></tr>
-            <tr><td>Geliştiricide</td><td>Hiçbir şey. Verinize erişebileceğimiz bir veritabanımız yok.</td></tr>
+            <tr><th>Veri sorumlusu</th><td>Ahmet Hamdi Gürlevük ("Geliştirici")</td></tr>
+            <tr><th>Adres</th><td>Maltepe / İstanbul (yazılı başvuru için posta adresi, talep edilmesi hâlinde e-posta ile bildirilir)</td></tr>
+            <tr><th>E-posta</th><td><a href="mailto:tatas.system@gmail.com">tatas.system@gmail.com</a></td></tr>
           </table>
-
-          <h2 id="g-veriler">3. Topladığımız veriler</h2>
-          <h3>Hesap bilgileri</h3>
-          <p>Google ile giriş yaptığınızda; e-posta adresiniz, adınız ve profil fotoğrafınız uygulama içinde görüntülenmek üzere alınır. Bunlar Google'ın kendi kimlik doğrulama sisteminden gelir, ayrıca bir veritabanında saklanmaz.</p>
-          <h3>İşletme verileriniz</h3>
-          <p>Uygulamayı kullanırken kendi isteğinizle girdiğiniz: müşteri adı/telefonu, sipariş/tamir kayıtları, fiyatlar, gider kayıtları ve çektiğiniz ürün fotoğrafları.</p>
-          <h3>Cihaz izinleri</h3>
-          <p><strong>Mikrofon:</strong> Sadece düğmeye bastığınızda etkinleşir; konuşmanız cihazınızın kendi motoru tarafından anlık metne çevrilir, ses kaydı hiçbir yere gönderilmez veya saklanmaz. <strong>Kamera/Galeri:</strong> tamir edilecek ürünlerin fotoğrafını çekmek/seçmek için kullanılır.</p>
-
-          <h2 id="g-scope">4. Google Drive izinleri</h2>
-          <p>TATAS, Google Drive'dan yalnızca <strong>tek bir dar yetki</strong> ister: <code>drive.appdata</code>.</p>
-          <table>
-            <tr><th>Yetki</th><th>Açıklama</th></tr>
-            <tr><td>Verdiği</td><td>Sadece TATAS'ın kendi oluşturduğu, gizli ve görünmez bir klasöre erişim</td></tr>
-            <tr><td>Vermediği</td><td>Drive'ınızdaki diğer dosyaları görme, okuma veya değiştirme yetkisi</td></tr>
-          </table>
-          <p>Bu izni, Google Hesabı ayarlarınızdaki "Güvenlik → Üçüncü taraf uygulamalar" bölümünden istediğiniz an geri alabilirsiniz.</p>
-
-          <h2 id="g-aktarim">5. Kimlere aktarılır</h2>
-          <ul>
-            <li><strong>Google LLC:</strong> Kimlik doğrulama ve verilerinizin kendi Drive hesabınızda saklanması amacıyla.</li>
-            <li><strong>Geliştiriciye:</strong> Aktarım yok — erişebileceğimiz bir sunucu bulunmuyor.</li>
-            <li><strong>Diğer üçüncü taraflara:</strong> Aktarım yok. Reklam ağı, analitik/izleme SDK'sı kullanılmaz.</li>
-            <li><strong>WhatsApp/SMS:</strong> Müşterinizi bilgilendirmeyi tercih ettiğinizde mesaj, cihazınızdaki WhatsApp/SMS uygulaması üzerinden doğrudan gönderilir; Geliştirici bu iletişime taraf olmaz.</li>
-          </ul>
 
           <div class="callout">
-            <p><strong>Önemli:</strong> Uygulamaya girdiğiniz kendi müşterilerinize ait veriler bakımından KVKK kapsamında "veri sorumlusu" <strong>sizsiniz</strong> — Geliştirici değil. Geliştirici bu veriye erişemez, sadece sizin belirlediğiniz yerde (cihazınız/Drive'ınız) saklanmasını sağlayan bir araç sunar.</p>
+            <p><strong>Önemli:</strong> Uygulamaya girdiğiniz <strong>kendi müşterilerinize ait veriler</strong> (ad, telefon, sipariş bilgisi vb.) bakımından veri sorumlusu <strong>sizsiniz</strong>, Geliştirici değil. Geliştirici bu verilerin işlenme amacını belirlemez, bu verilere erişemez ve kendi amaçları için kullanmaz; yalnızca verinin sizin belirlediğiniz yerde (cihazınız ve kendi Google Drive hesabınız) saklanmasını sağlayan bir yazılım sunar. Geliştirici, yalnızca bu metinde sayılan <strong>sizin</strong> hesap, cihaz ve destek verileriniz bakımından veri sorumlusudur.</p>
           </div>
+
+          <h2 id="g-nerede">2. Verileriniz nerede duruyor</h2>
+          <p>TATAS'ın <strong>kendi sunucusu yoktur:</strong></p>
+          <table>
+            <tr><th>Konum</th><th>Açıklama</th></tr>
+            <tr><td>Cihazınızda</td><td>Tüm veriler önce telefonunuzun yerel hafızasına yazılır; internet olmadan da çalışır.</td></tr>
+            <tr><td>Sizin Google Drive'ınızda</td><td>Yedek, kendi Google hesabınızın gizli uygulama klasöründe (<code>appDataFolder</code>) tutulur. Bu klasörü Drive'ınızdaki diğer uygulamalar ve siz Drive arayüzünden göremezsiniz.</td></tr>
+            <tr><td>Geliştiricide</td><td>Hiçbir şey. Verilerinize erişebileceğimiz bir sunucu veya veritabanı yoktur.</td></tr>
+          </table>
+
+          <h2 id="g-veriler">3. Hangi verileri, hangi amaçla işliyoruz</h2>
+          <table>
+            <tr><th>Veri</th><th>Amaç</th><th>Nerede tutulur</th></tr>
+            <tr><td><strong>Hesap bilgileri:</strong> e-posta adresiniz, adınız, profil fotoğrafınızın bağlantısı (Google ile girişte Google'dan alınır)</td><td>Giriş yapmanız; verinin doğru Google hesabına ait olduğunun kontrolü; ekranda gösterim</td><td>Cihazınızda ve Drive'ınızdaki ayar dosyasında</td></tr>
+            <tr><td><strong>İşletme verileri:</strong> müşteri adı/telefonu, sipariş ve tamir kayıtları, fiyatlar, gelir/gider kayıtları, dükkan adı ve meslek tercihiniz</td><td>Uygulamanın temel işlevi: kayıt tutma, raporlama, cihazlar arası senkron</td><td>Cihazınızda ve Drive'ınızda</td></tr>
+            <tr><td><strong>Ürün fotoğrafları</strong> (kamera veya galeriden, yalnızca siz seçtiğinizde)</td><td>Tamir öncesi/sonrası kayıt</td><td>Cihazınızda ve Drive'ınızda</td></tr>
+            <tr><td><strong>Cihaz bilgisi:</strong> cihazınızın model adı (ör. "Samsung SM-A546") ve Uygulamanın ürettiği rastgele bir cihaz kimliği</td><td>Aynı hesabı birden fazla cihazda kullanırken "son senkron hangi cihazdan yapıldı", "verileriniz X cihazından dışa aktarıldı" gibi bilgilendirmeler</td><td>Cihazınızda ve Drive'ınızda</td></tr>
+            <tr><td><strong>Ses (sesli giriş):</strong> yalnızca mikrofon düğmesine bastığınız süre boyunca</td><td>Konuşmanızın metin alanına yazıya çevrilmesi</td><td>Uygulama ses kaydı <strong>saklamaz</strong>. Çeviri, cihazınızın konuşma tanıma servisi (Android'de Google) tarafından yapılır; bu servis sesi işlemek için Google sunucularına gönderebilir.</td></tr>
+            <tr><td><strong>Destek yazışmaları:</strong> bize e-posta gönderdiğinizde e-posta adresiniz ve yazdıklarınız; "E-posta ile Destek Al" ile gönderirseniz dükkan adınız; hata ekranındaki "Geliştiriciye Bildir" ile gönderirseniz hata mesajı</td><td>Talebinizi yanıtlamak, hatayı gidermek</td><td>Geliştiricinin e-posta kutusunda</td></tr>
+          </table>
+          <p>Uygulama <strong>konum, kişi rehberi, arama kaydı</strong> gibi verilere erişmez; <strong>reklam veya analitik/izleme aracı kullanmaz.</strong></p>
+
+          <h2 id="g-hukuki">4. Toplama yöntemi ve hukuki sebepler</h2>
+          <p><strong>Yöntem:</strong> Verilerin büyük kısmı Uygulama ekranlarından doğrudan sizin tarafınızdan girilir. Hesap bilgileri Google ile giriş sırasında Google'dan, cihaz model adı ise işletim sisteminden otomatik olarak alınır.</p>
+          <p><strong>Hukuki sebepler (Kanun m.5/2):</strong></p>
+          <ul>
+            <li>Hesap bilgileri, işletme verileri, fotoğraflar, senkron: <strong>bir sözleşmenin kurulması veya ifasıyla doğrudan ilgili olması</strong> (c bendi): Uygulamanın size sunulabilmesi için zorunludur.</li>
+            <li>Cihaz bilgisi: <strong>sözleşmenin ifası</strong> (c) ve hesabınızın birden fazla cihazda güvenli kullanımı amacıyla <strong>veri sorumlusunun meşru menfaati</strong> (f).</li>
+            <li>Sesli giriş: isteğe bağlı bir özelliktir; kullanmadığınızda Uygulama klavyeyle tam işlevseldir. Kullandığınızda <strong>sözleşmenin ifası</strong> (c).</li>
+            <li>Destek yazışmaları: <strong>sözleşmenin ifası</strong> (c) ve <strong>meşru menfaat</strong> (f).</li>
+          </ul>
+
+          <h2 id="g-aktarim">5. Verilerin aktarıldığı taraflar ve yurt dışı aktarım</h2>
+          <ul>
+            <li><strong>Google LLC (ABD):</strong> Google ile giriş, verilerinizin kendi Google Drive hesabınızda saklanması, sesli girişte konuşma tanıma ve Google Play üzerinden uygulama güncellemeleri. Google'ın sunucuları yurt dışında bulunduğundan bu işlemler <strong>yurt dışına veri aktarımı</strong> niteliğindedir ve Kanun'un 9. maddesi çerçevesinde gerçekleştirilir. Google'ın kendi gizlilik politikası ayrıca geçerlidir.</li>
+            <li><strong>Geliştiriciye:</strong> Aktarım yoktur (destek e-postası göndermeniz hariç).</li>
+            <li><strong>Diğer üçüncü taraflara:</strong> Aktarım yoktur.</li>
+            <li><strong>WhatsApp / SMS:</strong> Müşterinize mesaj göndermeyi seçtiğinizde mesaj, cihazınızdaki WhatsApp veya SMS uygulaması üzerinden doğrudan gönderilir; Geliştirici bu iletişime taraf değildir.</li>
+          </ul>
 
           <h2 id="g-sure">6. Saklama süreleri</h2>
           <ul>
-            <li>Çöpe atılan sipariş/müşteri kayıtları: <strong>7 gün</strong> geri alınabilir, sonra kalıcı silinir.</li>
-            <li>Teslim edilmiş işlerin fotoğrafları: teslimattan <strong>14 gün</strong> sonra depolamadan temizlenir (metin/finansal kayıt kalır).</li>
+            <li><strong>Çöp kutusu:</strong> Çöpe attığınız sipariş/müşteri kayıtları <strong>7 gün</strong> boyunca geri alınabilir.</li>
+            <li><strong>Kalıcı silme:</strong> Silinen bir kayıt, diğer cihazlarınızın da silindiğini öğrenebilmesi için kısa bir süre "silindi" işaretiyle tutulur: cihazda Drive'a ulaştıktan sonra <strong>7 gün</strong>, Drive'da ise <strong>30 gün</strong>. Bu sürelerin sonunda tamamen kaldırılır.</li>
+            <li><strong>Teslim edilen işlerin fotoğrafları:</strong> Teslimattan <strong>14 gün</strong> sonra cihazdan ve Drive'dan silinir (metin ve finansal kayıt kalır).</li>
+            <li><strong>Diğer tüm veriler:</strong> Siz silene veya hesabınızı silene kadar saklanır.</li>
           </ul>
 
-          <h2 id="g-haklar">7. Kanun'un 11. Maddesi Kapsamındaki Haklarınız</h2>
+          <h2 id="g-yedek">7. Tam yedek dosyası</h2>
+          <p>Ayarlar'dan "Tüm Verileri Dışa Aktar" ile tüm verilerinizi tek bir dosyaya alabilirsiniz. Bu dosya <strong>şifrelenmemiştir</strong>: içinde müşteri adları, telefonları, fiyatlar ve gelir/gider kayıtlarınız okunabilir hâlde bulunur. Dosyayı ele geçiren biri içeriğini okuyabilir. Dosyayı nereye kaydettiğiniz veya kiminle paylaştığınız sizin kontrolünüzdedir; güvenmediğiniz kişilerle veya uygulamalarla paylaşmayın.</p>
+
+          <h2 id="g-scope">8. Güvenlik önlemleri</h2>
+          <ul>
+            <li>Uygulama Google Drive'dan yalnızca tek ve dar bir izin ister (<code>drive.appdata</code>): Drive'ınızdaki diğer dosyaları göremez, okuyamaz, değiştiremez. Bu izni Google Hesabı → Güvenlik → "Üçüncü taraf uygulamalar" bölümünden istediğiniz an geri alabilirsiniz.</li>
+            <li>Tüm veri aktarımı HTTPS/TLS ile şifrelidir.</li>
+            <li>Android'in kendi otomatik uygulama yedeklemesi kapalıdır; verileriniz yalnızca bu metinde anlatılan yerlerde bulunur.</li>
+            <li>Verilerinizin güvenliği Google hesabınızın güvenliğine de bağlıdır; iki adımlı doğrulamayı açmanızı öneririz.</li>
+          </ul>
+
+          <h2 id="g-haklar">9. Kanun'un 11. maddesi kapsamındaki haklarınız</h2>
           <ol>
             <li>Kişisel verinizin işlenip işlenmediğini öğrenme</li>
             <li>İşlenmişse buna ilişkin bilgi talep etme</li>
             <li>İşlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme</li>
-            <li>Yurt içinde/dışında aktarıldığı üçüncü kişileri bilme</li>
-            <li>Eksik/yanlış işlenmişse düzeltilmesini isteme</li>
-            <li>Kanun'un 7. maddesindeki şartlar çerçevesinde silinmesini/yok edilmesini isteme</li>
-            <li>Düzeltme/silme işlemlerinin aktarılan üçüncü kişilere bildirilmesini isteme</li>
+            <li>Yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri bilme</li>
+            <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme</li>
+            <li>Kanun'un 7. maddesindeki şartlar çerçevesinde silinmesini veya yok edilmesini isteme</li>
+            <li>Düzeltme ve silme işlemlerinin, verinin aktarıldığı üçüncü kişilere bildirilmesini isteme</li>
             <li>Otomatik sistemlerle analiz sonucu aleyhinize bir sonuç çıkmasına itiraz etme</li>
             <li>Kanuna aykırı işlenme nedeniyle zarara uğramanız hâlinde tazminat talep etme</li>
           </ol>
-          <p>Bu hakları Uygulama içinde Ayarlar → "Hesabı Sil" ile doğrudan kullanabilirsiniz (bkz. <a href="#hesap-silme">Bölüm 8</a>), diğer talepleriniz için <a href="mailto:tatas.system@gmail.com">tatas.system@gmail.com</a> adresinden bize ulaşabilirsiniz.</p>
+          <p><strong>Nasıl kullanırsınız:</strong> Silme hakkınızı Uygulama içinden doğrudan kullanabilirsiniz (<a href="#hesap-silme">Bölüm 10</a>). Diğer talepleriniz için <a href="mailto:tatas.system@gmail.com">tatas.system@gmail.com</a> adresine yazabilirsiniz. Talebiniz en geç <strong>30 gün</strong> içinde ücretsiz olarak yanıtlanır. Yanıttan memnun kalmazsanız Kişisel Verileri Koruma Kurulu'na şikâyette bulunabilirsiniz.</p>
 
-          <h2 id="hesap-silme">8. Hesabınızı ve Verilerinizi Silme</h2>
-          <p><strong>TATAS</strong> (Tamir Takip Sistemi) uygulamasında hesabınızı ve ilişkili tüm verilerinizi doğrudan uygulama içinden, kalıcı olarak silebilirsiniz. Bunun için ayrı bir web formu veya e-posta talebi göndermenize gerek yoktur — işlem tamamen sizin kontrolünüzdedir ve anlıktır.</p>
+          <h2 id="hesap-silme">10. Hesabınızı ve verilerinizi silme</h2>
+          <p>Hesabınızı ve ilişkili verilerinizi Uygulama içinden kalıcı olarak silebilirsiniz; ayrı bir form veya e-posta gerekmez.</p>
 
           <h3>Nasıl silinir</h3>
           <ol>
@@ -123,30 +146,27 @@
           </ol>
 
           <h3>Ne silinir</h3>
-          <p>Onay verdiğiniz anda aşağıdakilerin <strong>tamamı, kalıcı ve geri alınamaz</strong> şekilde silinir:</p>
-          <ul>
-            <li>Google Drive hesabınızdaki (<code>appDataFolder</code>) tüm TATAS verileri: müşteri kayıtları, sipariş/tamir kayıtları, gider kayıtları, ürün fotoğrafları ve ayarlarınız.</li>
-            <li>Cihazınızdaki yerel kopyalar (uygulama aynı anda oturumu kapatıp cihazı temizler).</li>
-          </ul>
-          <p>Silme işlemi <strong>anında</strong> gerçekleşir — ek bir bekleme süresi veya saklama dönemi yoktur; işlem tamamlandığı an veriler Drive'dan kaldırılmış olur.</p>
+          <p>Onayladığınız anda Google Drive'ınızdaki (<code>appDataFolder</code>) tüm TATAS verileri (müşteri, sipariş, gider kayıtları, fotoğraflar, ayarlar) ve cihazınızdaki yerel kopyalar silinir. Aynı hesabı kullanan diğer cihazlarınızın da kendini temizleyebilmesi için Drive'da yalnızca küçük bir <strong>silme işareti</strong> kalır: silinme zamanı ve silme işlemini yapan cihazın model adı. Bu işaret müşteri veya işletme verisi içermez.</p>
 
           <h3>Hesabınızı silmeden veri silme</h3>
-          <p>Hesabınızı hiç silmeden de verilerinizi silebilirsiniz:</p>
           <ul>
-            <li><strong>Kısmi silme:</strong> Uygulama içinde herhangi bir müşteri, sipariş/tamir veya gider kaydını, ilgili kayıttaki "Sil" seçeneğiyle tek tek ve kalıcı olarak silebilirsiniz. Bu işlem yalnızca sildiğiniz kaydı etkiler.</li>
-            <li><strong>Verilerin tamamının silinmesi:</strong> Ayarlar → <strong>"Uygulamayı Sıfırla"</strong> ile, hesabınız açık kalmaya devam ederken müşteri, sipariş ve gider verilerinizin <strong>tamamını</strong> tek seferde, kalıcı olarak silebilirsiniz. Hesabınız ve Google girişiniz bu işlemden etkilenmez, sıfırdan kaldığınız yerden devam edebilirsiniz.</li>
+            <li><strong>Tek tek:</strong> Herhangi bir müşteri, sipariş veya gider kaydını ilgili kayıttaki "Sil" seçeneğiyle silebilirsiniz (süreler için <a href="#g-sure">Bölüm 6</a>).</li>
+            <li><strong>Tümü:</strong> Ayarlar → <strong>"Uygulamayı Sıfırla"</strong> ile hesabınız açık kalırken müşteri, sipariş ve gider verilerinizin tamamını tek seferde silebilirsiniz.</li>
           </ul>
 
-          <h2 id="g-cocuk">9. Çocukların gizliliği</h2>
-          <p>TATAS, işletme sahiplerine yönelik bir araçtır ve 13 yaş altındaki çocuklardan bilerek veri toplamaz.</p>
+          <h2 id="g-musteri">11. Müşterilerinizin verileri hakkında</h2>
+          <p>Müşterilerinizin verileri bakımından veri sorumlusu siz olduğunuz için, müşterilerinizi kişisel verilerinin işlenmesi hakkında bilgilendirmek sizin sorumluluğunuzdadır. Uygulamanın mesaj özelliklerini (özellikle <strong>toplu mesaj</strong>) kampanya, indirim veya reklam amacıyla kullanırsanız bu mesajlar 6563 sayılı Kanun kapsamında <strong>ticari elektronik ileti</strong> sayılır; bunun için müşterinin önceden onayını almanız ve gerekiyorsa İleti Yönetim Sistemi'ne (İYS) kayıtlı olmanız gerekir. "İşiniz hazır" gibi hizmetle ilgili bilgilendirme mesajları bu kapsamda değildir.</p>
 
-          <h2 id="g-degisiklik">10. Değişiklikler</h2>
-          <p>Bu politika güncellendiğinde, sayfanın üst kısmındaki "Son güncelleme" tarihi değişir.</p>
+          <h2 id="g-cocuk">12. Çocukların gizliliği</h2>
+          <p>TATAS işletme sahiplerine yönelik bir araçtır; 13 yaşından küçük çocuklardan bilerek veri toplamaz.</p>
+
+          <h2 id="g-degisiklik">13. Değişiklikler</h2>
+          <p>Bu metin güncellendiğinde sayfanın başındaki "Son güncelleme" tarihi değişir. Önemli değişikliklerde Uygulama içinden de bilgilendirme yapılır.</p>
         </article>
 
         <!-- ================= KULLANIM KOŞULLARI ================= -->
         <article class="legal-doc" id="kosullar" style="display:none;">
-          <p class="meta">Son güncelleme: 17 Temmuz 2026</p>
+          <p class="meta">Son güncelleme: 19 Ekim 2026</p>
 
           <h2>1. Hizmetin tanımı</h2>
           <p>TATAS; tamir, bakım ve onarım işletmelerinin müşteri, sipariş ve gider kayıtlarını yönetmesi için tasarlanmış, çevrimdışı öncelikli bir mobil uygulamadır. Veri saklama alanı olarak kullanıcının kendi Google Drive hesabını kullanır.</p>
@@ -162,6 +182,7 @@
 
           <h2>5. Girdiğiniz içerik</h2>
           <p>Uygulamaya girdiğiniz tüm veriler (müşteri bilgisi, fotoğraflar, notlar) size aittir. Bu verilerin doğruluğundan, güncelliğinden ve müşterilerinizden gerekli izinleri almaktan siz sorumlusunuz.</p>
+          <p>Uygulamanın mesaj özelliklerini (özellikle toplu mesaj) kampanya, indirim veya reklam amacıyla kullanmanız hâlinde, 6563 sayılı Kanun kapsamındaki ticari elektronik ileti kurallarına uymak (müşterinin önceden onayını almak, gerekiyorsa İleti Yönetim Sistemi'ne kayıtlı olmak) sizin sorumluluğunuzdadır (bkz. <a href="#g-musteri" onclick="document.querySelector('[data-doc=gizlilik]').click()">Gizlilik Politikası, Bölüm 11</a>).</p>
 
           <h2>6. Yasaklı kullanım</h2>
           <ul>

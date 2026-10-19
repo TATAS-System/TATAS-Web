@@ -456,3 +456,8 @@ img { max-width: 100%; display: block; }
 .legal-doc table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 14px; }
 .legal-doc th, .legal-doc td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); }
 .legal-doc th { color: var(--text-secondary); font-weight: 600; font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.04em; }
+.legal-doc td { overflow-wrap: anywhere; }
+@media (max-width: 600px) {
+  .legal-doc table { font-size: 13px; }
+  .legal-doc th, .legal-doc td { padding: 8px 6px; }
+}
