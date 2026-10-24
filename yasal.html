@@ -48,7 +48,7 @@
 
         <!-- ================= GİZLİLİK POLİTİKASI ================= -->
         <article class="legal-doc" id="gizlilik">
-          <p class="meta">Son güncelleme: 19 Ekim 2026 · KVKK Kurumu'nun "Mobil Uygulamalarda Mahremiyetin Korunmasına Yönelik Tavsiyeler" (Yayın No: 65, Mart 2025) rehberi esas alınarak hazırlanmıştır.</p>
+          <p class="meta">Son güncelleme: 24 Ekim 2026 · KVKK Kurumu'nun "Mobil Uygulamalarda Mahremiyetin Korunmasına Yönelik Tavsiyeler" (Yayın No: 65, Mart 2025) rehberi esas alınarak hazırlanmıştır.</p>
 
           <h2 id="g-giris">1. Veri sorumlusu</h2>
           <p>6698 sayılı Kişisel Verilerin Korunması Kanunu'nun ("Kanun") 10. maddesi uyarınca, TATAS (Tamir Takip Sistemi) mobil uygulamasını ("Uygulama") kullanırken kişisel verilerinizin işlenmesi hakkında sizi bilgilendiriyoruz.</p>
@@ -110,12 +110,14 @@
           </ul>
 
           <h2 id="g-yedek">7. Tam yedek dosyası</h2>
-          <p>Ayarlar'dan "Tüm Verileri Dışa Aktar" ile tüm verilerinizi tek bir dosyaya alabilirsiniz. Bu dosya <strong>şifrelenmemiştir</strong>: içinde müşteri adları, telefonları, fiyatlar ve gelir/gider kayıtlarınız okunabilir hâlde bulunur. Dosyayı ele geçiren biri içeriğini okuyabilir. Dosyayı nereye kaydettiğiniz veya kiminle paylaştığınız sizin kontrolünüzdedir; güvenmediğiniz kişilerle veya uygulamalarla paylaşmayın.</p>
+          <p>Ayarlar'dan "Tüm Verileri Dışa Aktar" ile tüm verilerinizi tek bir dosyaya alabilirsiniz. Bu dosya <strong>şifrelidir</strong> (AES-256): içeriği okunamaz ve değiştirilirse Uygulama tarafından reddedilir. Dosyayı yalnızca <strong>aynı Google hesabıyla</strong> giriş yapılmış TATAS açabilir; hesabınızı silerseniz eski yedek dosyaları da kalıcı olarak açılamaz hâle gelir. Dosyayı nereye kaydettiğiniz veya kiminle paylaştığınız sizin kontrolünüzdedir.</p>
+          <p><strong>Eski sürümler:</strong> Uygulamanın 1.7.0'dan önceki sürümleriyle alınmış yedek dosyaları (<code>.json</code>) <strong>şifresizdir</strong> ve içeriği okunabilir. Bu dosyaları güvenmediğiniz kişilerle paylaşmayın; uygulamayı güncelleyip yeni (şifreli) bir yedek aldıktan sonra eski dosyaları silmenizi öneririz.</p>
 
           <h2 id="g-scope">8. Güvenlik önlemleri</h2>
           <ul>
             <li>Uygulama Google Drive'dan yalnızca tek ve dar bir izin ister (<code>drive.appdata</code>): Drive'ınızdaki diğer dosyaları göremez, okuyamaz, değiştiremez. Bu izni Google Hesabı → Güvenlik → "Üçüncü taraf uygulamalar" bölümünden istediğiniz an geri alabilirsiniz.</li>
             <li>Tüm veri aktarımı HTTPS/TLS ile şifrelidir.</li>
+            <li>Tam yedek dosyaları AES-256 ile şifrelenir (<a href="#g-yedek">Bölüm 7</a>).</li>
             <li>Android'in kendi otomatik uygulama yedeklemesi kapalıdır; verileriniz yalnızca bu metinde anlatılan yerlerde bulunur.</li>
             <li>Verilerinizin güvenliği Google hesabınızın güvenliğine de bağlıdır; iki adımlı doğrulamayı açmanızı öneririz.</li>
           </ul>
@@ -146,7 +148,7 @@
           </ol>
 
           <h3>Ne silinir</h3>
-          <p>Onayladığınız anda Google Drive'ınızdaki (<code>appDataFolder</code>) tüm TATAS verileri (müşteri, sipariş, gider kayıtları, fotoğraflar, ayarlar) ve cihazınızdaki yerel kopyalar silinir. Aynı hesabı kullanan diğer cihazlarınızın da kendini temizleyebilmesi için Drive'da yalnızca küçük bir <strong>silme işareti</strong> kalır: silinme zamanı ve silme işlemini yapan cihazın model adı. Bu işaret müşteri veya işletme verisi içermez.</p>
+          <p>Onayladığınız anda Google Drive'ınızdaki (<code>appDataFolder</code>) tüm TATAS verileri (müşteri, sipariş, gider kayıtları, fotoğraflar, ayarlar, yedek şifreleme anahtarı) ve cihazınızdaki yerel kopyalar silinir. Aynı hesabı kullanan diğer cihazlarınızın da kendini temizleyebilmesi için Drive'da yalnızca küçük bir <strong>silme işareti</strong> kalır: silinme zamanı ve silme işlemini yapan cihazın model adı. Bu işaret müşteri veya işletme verisi içermez.</p>
 
           <h3>Hesabınızı silmeden veri silme</h3>
           <ul>
